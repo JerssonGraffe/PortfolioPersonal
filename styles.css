@@ -10,6 +10,10 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+}
+
 
 .cabezaSite{
     padding-top: 12em;
@@ -80,9 +84,6 @@ body{
         padding-right: 60px !important;
     }
 
-    .articleProjecto{
-        height: 2850px !important;
-    }
 
     .projecto{
         display: grid !important;
@@ -97,7 +98,10 @@ body{
         font-size: 18px !important;
         width: 85% !important;
         margin: 0px !important;
-        margin-left: 45px !important;
+        text-align: center !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        
         
     }
 
@@ -120,7 +124,13 @@ body{
     }
     
 
-    
+    .contact2{
+        flex-direction: column;
+    }
+
+    aside p{
+        font-size: 15px !important;
+    }
 
 
     
@@ -148,6 +158,12 @@ body{
 
         grid-template-columns: repeat(3, 1fr) !important;
 
+    }
+
+    #h1ComingSoon{
+        color: white;
+        font-family: "Inconsolata";
+        margin-left: 15% !important;
     }
 }
 
@@ -277,7 +293,7 @@ main{
 /* SECTION */
 
 .articleProjecto{
-    height: 1350px;
+    padding-bottom: 50px;
     background-color: rgb(20, 33, 43);
     padding-top: 35px;
 }
@@ -300,6 +316,12 @@ main{
     font-family: "Inconsolata";
     font-size: 30px;
     
+}
+
+#h1ComingSoon{
+    color: white;
+    font-family: "Inconsolata";
+    margin-left: 37%;
 }
 
 
@@ -359,10 +381,10 @@ main{
 /* Techs&Tools */
 
 .articleQualidades{
-    height: 2000px;
     background-color: rgb(20, 33, 43);
     padding-top: 15px;
     margin-top: 35px;
+    padding-bottom: 70px;
 }
 
 .qualidades{
@@ -436,6 +458,61 @@ main{
     filter: grayscale(0%);
 }
 
+.FaleComigo{
+    margin-top: 50px;
+    background-color: rgb(21, 35, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FaleComigo h1{
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 35px;
+}
+
+.FaleComigo p{
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.contact2{
+    display: flex;
+    margin: 30px;
+}
+
+.contact2 a{
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    border: 3px solid white;
+    background-color: rgb(39, 64, 83);
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 18px;
+    margin: 15px;
+    transition: 0.2s ease;
+}
+
+.contact2 a:hover{
+    background-color: white;
+    color: rgb(39, 64, 83);
+}
+
+aside p{
+    font-size: 17px;
+    display: flex;
+    color: white;
+    font-family: "Inconsolata";
+    justify-content: center;
+    padding-bottom: 20px;
+}
 
 
 /* Transiciones / animaciones */
