@@ -1,0 +1,447 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+
+body{
+    background-color: rgb(31, 47, 59);
+    height: 1500px;
+
+}
+
+
+.cabezaSite{
+    padding-top: 12em;
+    display: flex;
+    margin: auto;
+    width: 600px;
+
+    justify-content: center;
+}
+
+.imagenperfil{
+    margin-top: 35px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: aparecer 1.5s forwards;
+    opacity: 0;
+}
+
+.partetexto{
+    padding-left: 30px;
+}
+
+.imagenFundo{
+    height: 55em;
+    width: 40%;
+    background-color: rgb(26, 39, 49);
+    position: fixed;
+    top: 0;
+    z-index: -1500;
+    animation: aparecer 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1100px){
+    .cabezaSite{
+        margin: 0;
+        padding: auto;
+        display: grid;
+        justify-items: center;
+        justify-self: center;
+        width: 350px;
+        height: 400px;
+    }
+
+    .partetexto{
+        padding-left: 0px;
+    }
+
+    .imagenFundo{
+        height: 100%;
+        width: 50%;
+  
+    }
+
+    .sobremim{
+        padding: 60px !important;
+    }
+
+    .sobremim2 p{
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+
+    .articleProjecto{
+        height: 2850px !important;
+    }
+
+    .projecto{
+        display: grid !important;
+        justify-items: center !important;
+        justify-content: center !important;
+        margin: 40px !important;
+    }
+
+    
+
+    .projecto p{
+        font-size: 18px !important;
+        width: 80% !important;
+        margin: 0px !important;
+        margin-left: 45px !important;
+        
+    }
+
+    .projecto img{
+        height: 200px !important;
+        width: 200px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .projecto h2{
+        display: flex !important;
+    }
+
+    .projecto h1{
+        display: none;
+    }
+
+    .IconQualidad img{
+        filter: grayscale(0%) !important;
+    }
+    
+
+    
+
+
+    
+    
+}
+
+@media (max-width: 1200px){
+    .gridQualidades{
+        width: 90% !important;
+
+        grid-template-columns: repeat(4, 1fr) !important;
+
+    }
+
+    .projecto p{
+
+        width: 500px !important;
+
+    }
+}
+
+@media (max-width: 1000px){
+    .gridQualidades{
+        width: 90% !important;
+
+        grid-template-columns: repeat(3, 1fr) !important;
+
+    }
+}
+
+@media (max-width: 800px){
+    .gridQualidades{
+        width: 90% !important;
+
+        grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+}
+
+@media (max-width: 600px){
+    .gridQualidades{
+        width: 90% !important;
+
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
+}
+
+
+
+.nome{
+    font-family: "Inconsolata";
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: white;
+    animation: aparecer 1.5s forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.paragrafo{
+    font-family: "Inconsolata";
+    margin-top: 0px;
+    font-size: 18px;
+    color: white;
+    animation: aparecer 1.5s forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    padding-left: 45px;
+}
+
+#iconsvg{
+    height: 25px;
+    width: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.1s ease;
+    cursor: pointer;
+    animation: aparecer 1.5s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+
+#botonProjectos{
+    width: 130px;
+    height: 50px;
+    margin: 17px;
+    background-color: rgb(31, 47, 59);
+    border: 2px solid white;
+    border-radius: 7px;
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 15px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    animation: aparecer 1.5s forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
+}
+
+#botonProjectos:hover{
+    margin: 12px;
+    width: 140px;
+    height: 60px;
+    color: rgb(31, 47, 59);
+    font-size: 17px;
+    background-color: white;
+}
+
+/* MAIN */
+
+main{
+    margin-top: 20em;
+    background-color: rgb(20, 33, 43);
+}
+
+.sobremim{
+
+    padding-left: 100px;
+    padding-top: 50px;
+
+    display: flex;
+}
+
+.sobremim img{
+    height: 55px;
+    padding-top: 5px;
+    padding-right: 25px;
+}
+
+
+.sobremim h1{
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 30px;
+    
+}
+
+.sobremim2 p{
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 20px;
+    padding: 50px 100px 150px 100px;
+}
+
+/* SECTION */
+
+.articleProjecto{
+    height: 2050px;
+    background-color: rgb(20, 33, 43);
+    padding-top: 35px;
+}
+
+.textProjecto{
+    display: flex;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.textProjecto img{
+    height: 55px;
+    padding-top: 15px;
+    padding-right: 25px;
+}
+
+
+.textProjecto h1{
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 30px;
+    
+}
+
+
+
+.projecto{
+    cursor: pointer;
+    display: flex;
+    background-color: rgb(31, 47, 59);
+    align-items: center;
+    border-radius: 15px;
+    margin: 90px;
+    transition: 0.2s ease;
+}
+
+.projecto p{
+    font-family: "Inconsolata";
+    font-size: 19px;
+    width: 650px;
+    padding: 40px 80px 40px 40px;
+    color: white;
+}
+
+.projecto h1{
+    position: absolute;
+    margin-left: 87%;
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.projecto h2{
+    display: none;
+    color: white;
+    font-family: "Inconsolata";
+    
+}
+
+.projecto img{
+    height: 220px;
+    width: 220px;
+    margin: 25px;
+    border-radius: 15px;
+
+}
+
+.projecto:hover{
+    background-color: rgb(29, 48, 63);
+    margin: 90px 20px 90px 20px;
+}
+
+.projecto:hover h1{
+    opacity: 1;
+}
+
+/* Techs&Tools */
+
+.articleQualidades{
+    height: 2000px;
+    background-color: rgb(20, 33, 43);
+    padding-top: 15px;
+    margin-top: 35px;
+}
+
+.qualidades{
+    display: flex;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+.qualidades img{
+    height: 55px;
+    padding-top: 15px;
+    padding-right: 25px;
+}
+
+
+.qualidades h1{
+    color: white;
+    font-family: "Inconsolata";
+    font-size: 30px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.gridQualidades{
+    width: 90%;
+    display: grid;
+    justify-items: center; 
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto; 
+    gap: 10px
+}
+
+.IconQualidad{
+    background-color: rgb(29, 48, 63);
+    height: 60px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.2s ease;
+}
+
+.IconQualidad h1{
+    font-family: "Inconsolata";
+    color: white;
+    margin-left: 30px;
+    font-size: 20px;
+    
+}
+
+.IconQualidad img{
+    border-radius: 15px;
+    height: 50px;
+    margin-left: 10px;
+    filter: grayscale(100%);
+    transition: 0.2s ease;
+}
+
+.IconQualidad:hover{
+    background-color: rgb(39, 64, 83);
+}
+
+.IconQualidad:hover img{
+    filter: grayscale(0%);
+}
+
+
+
+/* Transiciones / animaciones */
+
+#iconsvg:hover{
+    height: 32px;
+    width: 32px;
+}
